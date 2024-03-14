@@ -1,9 +1,13 @@
 .country{
     width: fit-content;
-    border: 2px solid steelblue;
+    border: 2px solid rgb(127, 150, 169);
     margin: 15px;
     padding: 15px;
     border-radius: 15px;
     margin: 0 auto;
 }
 
+.visited{
+    background-color: rgb(109, 126, 186);
+    color: black;
+}
