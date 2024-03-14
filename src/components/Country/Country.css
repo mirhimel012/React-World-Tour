@@ -1,5 +1,6 @@
 .country{
     width: fit-content;
+    /* height: 700px; */
     border: 2px solid rgb(127, 150, 169);
     margin: 15px;
     padding: 15px;
@@ -10,4 +11,9 @@
 .visited{
     background-color: rgb(109, 126, 186);
     color: black;
+}
+
+.markVisitedButton{
+    padding: 1.5rem;
+    margin: 2rem;
 }

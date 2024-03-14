@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './Country.css';
 
-const Country = ({country}) => {
+const Country = ({country, handleVisitedCountry}) => {
     const {name, capital, area, flags, cca3, region} = country;
 
     const [visited, setVisited] = useState(false);
     const handleVisited = () => {
         setVisited(!visited);
     }
+
+    // const passWithParams = () => handleVisitedCountry(country);
 
     return (
         <div className={`country ${visited && 'visited'}`}>
@@ -24,6 +26,9 @@ const Country = ({country}) => {
             <button style={{marginRight:'6px'}} onClick={handleVisited}>{visited ? 'Visited':'Going'}</button>
             {/* {visited && 'I have Visited This Country'} */}
             {visited ? 'I have Visited This Country': 'I want to visit this Country'}
+            
+            <br />
+            <button onClick={() => handleVisitedCountry(country)} className='markVisitedButton'>Mark Visited</button>
         </div>
     );
 };
