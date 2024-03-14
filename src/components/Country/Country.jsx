@@ -1,10 +1,11 @@
+import './Country.css';
 
 const Country = ({country}) => {
     const {name, capital, area, flags, cca3, region} = country;
 
 
     return (
-        <div>
+        <div className="country">
             <h2>Name: {name.common} </h2>
             <h4>Official Name: {name.official} </h4>
             <h4>Capital: {capital} </h4>
