@@ -25,3 +25,9 @@
     color: rgb(15, 192, 18);
     margin: 2rem;
 }
+
+.visitedFlags img{
+    width: 100px;
+    height: 60px;
+    margin: 4px;
+}
