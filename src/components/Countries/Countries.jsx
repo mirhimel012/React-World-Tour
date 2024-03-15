@@ -44,7 +44,7 @@ const Countries = () => {
                 <h5 style={{fontSize:'2rem', color:'tomato'}} >Visited Flags: {visitedFlags.length} </h5>
                 <div className="visitedFlags">
                     {
-                        visitedFlags.map(flag => <img src={flag}></img> )
+                        visitedFlags.map((flag, idx) => <img key={idx} src={flag}></img> )
                     }
                 </div>
             </div>
